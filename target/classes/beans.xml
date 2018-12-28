@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+   <!--原始方式-->
+   <!-- <bean id="person" class="com.wang.bean.Person" scope="prototype" lazy-init="true" >
+        <property name="name" value="张三"></property>
+        <property name="age" value="18"></property>
+    </bean>-->
+    <!--包扫描，只要注解了@Component，@Controller等会被扫描-->
+    <!--<context:component-scan base-package="com.wang" use-default-filters="false" >
+        &lt;!&ndash;排除某个注解&ndash;&gt;
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        &lt;!&ndash;只包含某个注解&ndash;&gt;
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>-->
+
+  <!-- <bean id="car" class="com.wang.bean.Car" scope="prototype" lazy-init="true" init-method="init" destroy-method="destroy">
+   </bean>-->
+ <!--   <bean id="student" class="com.wang.bean.Student">
+        <property name="id" value="${student.id}" ></property>
+        <property name="name" value="${student.name}" ></property>
+    </bean>
+    <context:property-placeholder location="classpath:person.properties"/>-->
+
+   <!--<aop:aspectj-autoproxy/>-->
+
+</beans>
