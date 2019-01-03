@@ -1,0 +1,20 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Intellij project files
+*.iml
+.idea/
+
+# Others
+target/
+logs/
+.DS_Store
+*.pyc
+build/
+*.log
+tests/test/jdbc.tests.properties
+webapp/WEB-INF/classes/
+webapp/WEB-INF/jdbc.properties
+/bin
